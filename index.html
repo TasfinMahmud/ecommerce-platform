@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopVibe — Premium E-Commerce Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><i class="fas fa-bolt"></i> ShopVibe</a>
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search products...">
+            </div>
+            <div class="nav-actions">
+                <button class="nav-btn" id="cartBtn"><i class="fas fa-shopping-bag"></i><span class="cart-count" id="cartCount">0</span></button>
+                <button class="nav-btn"><i class="fas fa-heart"></i></button>
+                <button class="nav-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-banner">
+        <div class="hero-content">
+            <span class="hero-tag">🔥 New Collection 2026</span>
+            <h1>Discover Premium<br><span class="gradient-text">Tech Products</span></h1>
+            <p>Curated selection of the finest electronics, gadgets, and accessories.</p>
+            <div class="hero-btns">
+                <button class="btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now <i class="fas fa-arrow-right"></i></button>
+                <button class="btn-outline">View Deals</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="hstat"><span>2.5K+</span><small>Products</small></div>
+            <div class="hstat"><span>50K+</span><small>Customers</small></div>
+            <div class="hstat"><span>4.9★</span><small>Rating</small></div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="container">
+            <div class="cat-scroll">
+                <button class="cat-btn active" data-cat="all"><i class="fas fa-th"></i> All</button>
+                <button class="cat-btn" data-cat="phones"><i class="fas fa-mobile-alt"></i> Phones</button>
+                <button class="cat-btn" data-cat="laptops"><i class="fas fa-laptop"></i> Laptops</button>
+                <button class="cat-btn" data-cat="audio"><i class="fas fa-headphones"></i> Audio</button>
+                <button class="cat-btn" data-cat="wearables"><i class="fas fa-clock"></i> Wearables</button>
+                <button class="cat-btn" data-cat="accessories"><i class="fas fa-keyboard"></i> Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <div class="sort-options">
+                    <select id="sortSelect"><option value="featured">Featured</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option><option value="rating">Top Rated</option></select>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-bag"></i> Your Cart</h2>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total"><span>Total</span><span id="cartTotal">$0.00</span></div>
+            <button class="checkout-btn" id="checkoutBtn"><i class="fas fa-lock"></i> Checkout</button>
+            <p class="cart-note"><i class="fas fa-shield-alt"></i> Secure checkout powered by Stripe</p>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="product-modal" id="productModal"></div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"><i class="fas fa-check-circle"></i> <span id="toastMsg"></span></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><h4><i class="fas fa-bolt"></i> ShopVibe</h4><p>Premium tech products curated for you.</p></div>
+                <div><h4>Quick Links</h4><a href="#">About</a><a href="#">Contact</a><a href="#">FAQ</a></div>
+                <div><h4>Follow Us</h4><div class="social-links"><a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin"></i></a></div></div>
+            </div>
+            <p class="copyright">© 2026 ShopVibe — Built by <a href="https://github.com/TasfinMahmud">Tasfin Mahmud</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
