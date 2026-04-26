@@ -1,4 +1,4 @@
-# 🛒 ShopVibe — E-Commerce Platform
+# ShopVibe — E-Commerce Platform
 
 A modern, full-featured e-commerce web application with a sleek dark theme, real-time product search, dynamic cart management, and a complete checkout flow.
 
@@ -51,12 +51,6 @@ ecommerce-platform/
 └── README.md       # Documentation
 ```
 
-## 📄 License
+## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-<p align="center">
-  Built with ❤️ by <a href="https://github.com/TasfinMahmud">Tasfin Mahmud</a>
-</p>
+MIT — [Tasfin Mahmud](https://github.com/TasfinMahmud)
